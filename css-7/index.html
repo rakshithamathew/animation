@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation-name: example;
+  animation-duration: 4s;
+}
+
+@keyframes example {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+.box{
+    height: 100px;
+    width: 100px;
+    border: none;
+    background-color: red;
+    border-radius: 100%;
+    animation-name: ball;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    position: relative;
+}
+@keyframes ball{
+    0%{
+        background-color: rgb(192, 120, 120);
+        top: 0px;
+        left: 0px;
+    }
+    25%{
+        background-color: rgb(155, 216, 216);
+        top: 420px;
+        left: 200px;
+    }
+    50%{
+        background-color: rgb(116, 138, 94);
+        top: 0px;
+        left: 400px;
+    }
+    100%{
+        background-color: rgb(206, 125, 206);
+        top: 420px;
+        left: 600px;
+    }
+}
+</style>
+</head>
+<body>
+
+<h1>CSS Animation</h1>
+
+<div></div>
+<h1>Infinite Jumping ball</h1>
+<div class="box"></div>
+
+
+</body>
+</html>
+
+
